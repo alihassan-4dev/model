@@ -1,0 +1,17 @@
+[project]
+name = "karas-model-dev"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=1.26.0,<2.0.0",
+    "pandas>=2.0",
+    "streamlit>=1.28",
+    "tensorflow>=2.15,<2.17",
+    # On Windows, tensorflow is a meta-package; the actual implementation is tensorflow-intel
+    "tensorflow-intel>=2.15,<2.17; sys_platform == 'win32'",
+    "rouge-score>=0.1.2",
+    "matplotlib>=3.7",
+]
+    
